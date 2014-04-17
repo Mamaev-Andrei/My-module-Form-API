@@ -1,0 +1,5 @@
+name = My module 1
+description = "My First Module"
+core = 7.x
+version = 1.0
+package = My module
