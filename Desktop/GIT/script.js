@@ -26,12 +26,12 @@ $("#block-system-main").mouseenter(function() {
   });
 
    $("#clickone").click(function(){
-       $("#block-views-portfel-block .views-row-last").css({
-           "display": "none"
-       });
+       $("#block-views-portfel-block .views-row:last-child").remove();
+       
    });
       
- 
+  
+
 	
   });    
 })(jQuery); 
