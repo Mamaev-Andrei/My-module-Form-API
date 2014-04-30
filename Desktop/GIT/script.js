@@ -24,15 +24,21 @@
                 "font-weight": "normal"
             });
         });
-       var s = 0;
-       
+        var x = 0;
         $("#clickone").click(function() {
             var s = 0;
+            x = x + 1;
+            
             $("#block-views-portfel-block .views-row:last-child").remove();
             $("#block-views-portfel-block .views-row").each(function(){
-              s = s + 1;          
+             s = s + 1;
+             
+
             });
+        alert(x);
         alert(s);
+         
+       
         });
         
 
