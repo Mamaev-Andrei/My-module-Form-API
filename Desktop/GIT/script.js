@@ -30,14 +30,9 @@
             var s = 0;
             $("#block-views-portfel-block .views-row:last-child").remove();
             $("#block-views-portfel-block .views-row").each(function(){
-             s = s + 1;
-             
-
+              s = s + 1;          
             });
-       
         alert(s);
-         
-       
         });
         
 
