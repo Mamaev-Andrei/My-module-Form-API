@@ -33,8 +33,8 @@ function classNumber(a) {
           $("#block-views-portfel-block .views-row").each(function(){
             checkklass = classNumber(checkklass);
           });
-            alert(checkklass);
-            alert(click_number);
+          alert(checkklass);
+          alert(click_number);
         });
     });
 })(jQuery); 
