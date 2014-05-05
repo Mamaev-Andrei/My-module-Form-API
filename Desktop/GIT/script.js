@@ -27,14 +27,14 @@ function classNumber(a) {
 }
             var click_number = 0;
             $("#clickone").click(function() {
-            click_number = click_number + 1;
-            var checkklass = 0;
-            $("#block-views-portfel-block .views-row:last-child").remove();
+				click_number = click_number + 1;
+				var checkklass = 0;
+				$("#block-views-portfel-block .views-row:last-child").remove();
             $("#block-views-portfel-block .views-row").each(function(){
-             checkklass = classNumber(checkklass);
+				checkklass = classNumber(checkklass);
             });
-             alert(checkklass);
-             alert(click_number);
+				alert(checkklass);
+				alert(click_number);
             });
     });
 })(jQuery); 
