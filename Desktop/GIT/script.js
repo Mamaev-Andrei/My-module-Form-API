@@ -45,9 +45,9 @@ function removeClass(){
 }
 function countAll() {
     countClick();
-    removeClass();
     countElems(); 
 }
+removeClass();
 countAll();
   
    
