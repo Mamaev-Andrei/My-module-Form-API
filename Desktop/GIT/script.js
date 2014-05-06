@@ -25,17 +25,32 @@
 function classNumber(a) {
   return a + 1;
 }
-          var click_number = 0;
-        $("#clickone").click(function() {
-          click_number = click_number + 1;
-          var checkklass = 0;
-          $("#block-views-portfel-block .views-row:last-child").remove();
-          $("#block-views-portfel-block .views-row").each(function(){
+function countElems() {          
+    $("#clickone").click(function() {
+        var checkklass = 0;
+        $("#block-views-portfel-block .views-row").each(function(){
             checkklass = classNumber(checkklass);
-          });
-          alert(checkklass);
-          alert(click_number);
-        });
+        }); 
+        alert (checkklass);
+    });   
+}
+function clickNumber(b) { 
+    return b + 1;
+}
+var clicki = 0;
+function countClick() {
+    $("#clickone").click(function() {
+        clicki = clickNumber(clicki);
+        $("#block-views-portfel-block .views-row:last-child").remove();
+        alert (clicki);
+    });   
+}
+function countAll() {
+    countClick();
+    countElems(); 
+}
+   countAll();
+  
+   
     });
 })(jQuery); 
-
