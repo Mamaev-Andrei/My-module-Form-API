@@ -40,18 +40,15 @@ function countClick() {
 }
 function removeClass(){
     $("#clickone").click(function() {
-    $("#block-views-portfel-block .views-row:last-child").remove();
-});
+        $("#block-views-portfel-block .views-row:last-child").remove();
+    });
 }
-
-
-    function countAll() {
+function countAll() {
     countClick();
     removeClass();
     countElems(); 
-    
 }
-   countAll();
+countAll();
   
    
     });
