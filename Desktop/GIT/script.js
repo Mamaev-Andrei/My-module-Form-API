@@ -22,25 +22,19 @@
                 "font-weight": "normal"
             });
         });
-function classNumber(a) {
-  return a + 1;
-}
 function countElems() {          
     $("#clickone").click(function() {
         var checkklass = 0;
         $("#block-views-portfel-block .views-row").each(function(){
-            checkklass = classNumber(checkklass);
+          checkklass = checkklass + 1;
         }); 
         alert (checkklass);
     });   
 }
-function clickNumber(b) { 
-    return b + 1;
-}
 var clicki = 0;
 function countClick() {
     $("#clickone").click(function() {
-        clicki = clickNumber(clicki);
+        clicki = clicki + 1;
         $("#block-views-portfel-block .views-row:last-child").remove();
         alert (clicki);
     });   
