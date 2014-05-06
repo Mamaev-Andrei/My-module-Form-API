@@ -31,17 +31,25 @@ function countElems() {
         alert (checkklass);
     });   
 }
-var clicki = 0;
+var click = 0;
 function countClick() {
     $("#clickone").click(function() {
-        clicki = clicki + 1;
-        $("#block-views-portfel-block .views-row:last-child").remove();
-        alert (clicki);
+        click = click + 1;
+        alert (click);
     });   
 }
-function countAll() {
+function removeClass(){
+    $("#clickone").click(function() {
+    $("#block-views-portfel-block .views-row:last-child").remove();
+});
+}
+
+
+    function countAll() {
     countClick();
+    removeClass();
     countElems(); 
+    
 }
    countAll();
   
